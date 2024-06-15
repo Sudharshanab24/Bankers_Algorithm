@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1A0744;
+    margin: 0;
+    padding: 20px;
+    background-image: url('computer-8393582_1280.jpg'); /* Use your HP laptop image here */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #121010; /* Dark text color for better visibility */
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #121010; /* Dark text color */
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00b37d; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #155478;
+}
+
+#inputFields {
+    margin-bottom: 20px;
+}
+
+#result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(224, 247, 250, 0.8); /* Semi-transparent background */
+    border: 1px solid #00acc1;
+    border-radius: 4px;
+    color: #121010; /* Dark text color */
+}
+
+
+/* Styling for navigation buttons */
+#prevButton,
+#nextButton {
+    margin-right: 10px; /* Adjust the right margin between buttons */
+}
+
+/* Add space between previous and next buttons */
+#navigationButtons {
+    justify-content: center; /* Center align the buttons */
+}
+
+/* Styling for the "Check Safe State" button */
+#checkSafeStateButton {
+    display: block;
+    margin: 20px auto; /* Center the button horizontally with top and bottom margin */
+    padding: 8px 16px; /* Adjust padding for a smaller button size */
+    font-size: 14px; /* Adjust font size for a smaller button */
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 4px; /* Rounded corners */
+}
+
+/* Hover effect for better interactivity */
+#checkSafeStateButton:hover {
+    background-color: #45a049; /* Darker green */
+}
+

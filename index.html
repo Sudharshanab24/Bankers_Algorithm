@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banker's Algorithm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Banker's Algorithm</h1>
+        <div class="initial-input">
+            <div class="input-group">
+                <label for="numProcesses">Number of Processes:</label>
+                <input type="number" id="numProcesses" min="1" value="5">
+            </div>
+            <div class="input-group">
+                <label for="numResources">Number of Resources:</label>
+                <input type="number" id="numResources" min="1" value="3">
+            </div>
+            <button onclick="initializeForm()" style="width:fit-content;">Generate Fields</button>
+        </div>
+        <form id="inputForm" onsubmit="checkSafeState(event)" style="display:none;">
+            <div id="inputFields"></div>
+            <div id="availableResources" style="display:none;">
+                <h3>Available Resources</h3>
+                <div class="input-group">
+                    <label for="avail">Available:</label>
+                    <input type="text" id="avail" placeholder="e.g. 3 3 2">
+                </div>
+            </div>
+            <div id="navigationButtons" style="display:none;">
+                <button id="prevButton" type="button" onclick="showPreviousProcess()" style="display:none;width:fit-content;">Previous</button>
+                <button id="nextButton" type="button" onclick="showNextProcess()" style="display:none;width:fit-content;">Next</button>
+            </div>
+            <button id="submitButton" type="submit" style="display:none;width:fit-content;">Check Safe State</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
